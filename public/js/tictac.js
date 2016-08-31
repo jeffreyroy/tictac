@@ -10,7 +10,7 @@ function play(x, y) {
 
 	if (board_position[x][y] == 0) {
 		board_position[x][y] = 1;
-		document.getElementById(board_id[x][y]).src = 'x.jpg';
+		document.getElementById(board_id[x][y]).src = '/images/x.jpg';
 		document.getElementById("blurb").innerHTML =
 			"You just moved to square " + board_id[x][y] + ".  Let me think...";
 		nummoves++;
@@ -48,7 +48,7 @@ function compplay() {
 	}
 	// Make computer move
 	board_position[cx][cy] = 2;
-	document.getElementById(board_id[cx][cy]).src = 'o.jpg';
+	document.getElementById(board_id[cx][cy]).src = '/images/o.jpg';
 	document.getElementById("blurb").innerHTML =
 		"I move to square " + board_id[cx][cy] + ".  Your move.";
 	nummoves++;
