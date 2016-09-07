@@ -1,6 +1,6 @@
-#board {
+#main-board {
 	position: fixed;
-	top: 100px;
+	top: 96px;
 	left: 100px;
 	height: 300px;
 	width: 300px;
@@ -12,12 +12,17 @@
 	font-size: 24px;
 }
 
-#a { position: fixed; top: 100px; left: 100px; height: 90px; width: 95px; }
-#b { position: fixed; top: 200px; left: 100px; height: 90px; width: 95px; }
-#c { position: fixed; top: 300px; left: 100px; height: 90px; width: 95px; }
-#d { position: fixed; top: 100px; left: 200px; height: 90px; width: 95px; }
-#e { position: fixed; top: 200px; left: 200px; height: 90px; width: 95px; }
-#f { position: fixed; top: 300px; left: 200px; height: 90px; width: 95px; }
-#g { position: fixed; top: 100px; left: 300px; height: 90px; width: 95px; }
-#h { position: fixed; top: 200px; left: 300px; height: 90px; width: 95px; }
-#i { position: fixed; top: 300px; left: 300px; height: 90px; width: 95px; }
+.board {
+  position: fixed;
+  height: 88px; width: 92px;
+}
+
+#s6 { top: 100px; left: 100px; }
+#s1 { top: 200px; left: 100px; }
+#s8 { top: 300px; left: 100px; }
+#s7 { top: 100px; left: 200px; }
+#s5 { top: 200px; left: 200px; }
+#s3 { top: 300px; left: 200px; }
+#s2 { top: 100px; left: 300px; }
+#s9 { top: 200px; left: 300px; }
+#s4 { top: 300px; left: 300px; }

@@ -2,6 +2,12 @@ require_relative 'board'
 require_relative 'game'
 require_relative 'player'
 
+def set_up_game
+	board = Board.new
+	ai = Ai.new(board)
+	player = Player.new(board)
+end
+
 
 # Intro
 file = File.open("intro.txt", "r")
@@ -14,9 +20,7 @@ while go_first != "y" and go_first != "n"
 	go_first = gets.chomp
 end
 
-board = Board.new
-ai = Ai.new(board)
-player = Player.new(board)
+set_up_game
 
 
 # If computer moves first, choose a decent starting move.
